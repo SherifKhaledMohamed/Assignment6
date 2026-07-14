@@ -1,0 +1,18 @@
+:root {
+  --main-txt-font-chakra: "Chakra Petch", sans-serif;
+  --main-txt-font-days: "Days One", sans-serif;
+  --color-light: #f1f1f1;
+  --color-lemon: #cbfe1c;
+}
+
+body {
+  font: var(--main-txt-font-chakra);
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+.text-lemon {
+    color: var(--color-lemon);
+}
