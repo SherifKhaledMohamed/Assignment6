@@ -1,8 +1,38 @@
 :root {
-  --main-txt-font-chakra: "Chakra Petch", sans-serif;
-  --main-txt-font-days: "Days One", sans-serif;
+  --main-bg-dark: #0b0e13;
   --color-light: #f1f1f1;
   --color-lemon: #cbfe1c;
+}
+
+.navbar-brand {
+  font-size: 18px !important;
+}
+
+.my-nav-item {
+  font-size: 14px !important;
+}
+
+nav .my-button {
+  font-size: 14px !important;
+}
+
+.activeplayers .top-txt {
+  font-size: 11px !important;
+}
+.activeplayers .bot-txt {
+  font-size: 16px !important;
+}
+
+#header .container .my-button {
+  font-size: 12px !important;
+}
+
+#header .hero-desc {
+  font-size: 12px !important;
+}
+
+#header .hero-title {
+  font-size: 32px !important;
 }
 
 body {
@@ -10,9 +40,195 @@ body {
 }
 
 .text-light {
-  color: var(--color-light);
+  color: var(--color-light) !important;
 }
 
 .text-lemon {
-    color: var(--color-lemon);
+  color: var(--color-lemon) !important;
+}
+
+header {
+  min-height: 75px;
+}
+
+.border-gray {
+  border-color: rgba(255, 255, 255, 10%) !important;
+}
+
+.dark-bg {
+  background-color: var(--main-bg-dark);
+}
+
+.text-font-chakra {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.text-font-days {
+  font-family: "Days One", sans-serif;
+}
+
+.top-75p {
+  top: 75px;
+}
+
+nav.my-navbar .navbar-nav a {
+  color: var(--color-light);
+  transition: all 0.4s;
+}
+
+nav.my-navbar .navbar-nav a:hover {
+  color: var(--color-lemon);
+}
+
+main {
+  margin-top: 75px;
+}
+
+nav.my-navbar .my-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  background-color: var(--color-lemon);
+  color: var(--main-bg-dark);
+}
+
+nav.my-navbar .my-button::before {
+  content: "";
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: -30%;
+  top: 0;
+  transition: left 0.5s;
+  z-index: 51;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(2px);
+  transform: skewX(-10deg);
+}
+
+nav.my-navbar .my-button:hover::before {
+  left: 110%;
+}
+nav.my-navbar .my-button:hover {
+  background-color: #a4ce1a;
+}
+
+nav.my-navbar button.navbar-toggler i {
+  transition: color 0.4s;
+}
+
+nav.my-navbar button.navbar-toggler:hover i {
+  color: var(--color-lemon);
+}
+
+#header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+#header .row .image {
+  height: 300px;
+  border: 4px solid transparent;
+  background-image: linear-gradient(to right, #cbfe1d, #09df72);
+  background-origin: border-box;
+  background-clip: border-box;
+}
+
+.activeplayers {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  border-radius: 10px;
+  bottom: -5%;
+  left: -5%;
+}
+
+.activeplayers .top-txt {
+  color: gray;
+}
+
+#header .container .my-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+  background-color: var(--color-lemon);
+  color: var(--main-bg-dark);
+}
+
+#header .container .my-button::before {
+  content: "";
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: -30%;
+  top: 0;
+  transition: left 0.5s;
+  z-index: 51;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(2px);
+  transform: skewX(-10deg);
+}
+
+#header .container .my-button:hover::before {
+  left: 110%;
+}
+#header .container .my-button:hover {
+  background-color: #a4ce1a;
+}
+
+#header .container .my-button {
+  border: 2px solid var(--color-lemon) !important;
+}
+
+#header .hero-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*sm*/
+@media screen and (min-width: 576px) {
+}
+/*md*/
+@media screen and (min-width: 768px) {
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+
+  .my-nav-item {
+    font-size: 16px !important;
+  }
+
+  nav .my-button {
+    font-size: 16px !important;
+  }
+
+  .activeplayers .top-txt {
+    font-size: 12px !important;
+  }
+  .activeplayers .bot-txt {
+    font-size: 20px !important;
+  }
+
+  #header .container .my-button {
+    font-size: 16px !important;
+  }
+
+  #header .hero-desc {
+    font-size: 16px !important;
+  }
+
+  #header .hero-title {
+    font-size: 48px !important;
+  }
+}
+/*lg*/
+@media screen and (min-width: 992px) {
+  #header .hero-title {
+    font-size: 60px !important;
+  }
 }

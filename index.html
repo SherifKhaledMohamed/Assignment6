@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Games Website</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
@@ -16,47 +16,140 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-dark text-light">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href=""
-          ><span class="logo"><i class="fa-solid fa-gamepad"></i></span>
-          GameArena</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#our-games">OUR GAMES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#what-we-do">What We Do</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#our-team">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact Us</a>
-            </li>
-          </ul>
+  <body class="dark-bg text-light text-font-chakra">
+    <header
+      class="border-bottom border-gray w-100 position-fixed top-0 start-0 dark-bg"
+    >
+      <nav class="navbar navbar-expand-lg my-navbar w-100 py-4">
+        <div class="container">
+          <a class="navbar-brand fw-bold text-lemon" href=""
+            ><span class="logo"><i class="fa-solid fa-gamepad me-2"></i></span>
+            GameArena</a
+          >
+          <button
+            class="navbar-toggler text-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="expand-button"
+          >
+            <span class="d-flex align-items-center justify-content-center"
+              ><i class="fa-solid fa-bars"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-2 mb-2 mb-lg-0 fw-medium">
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#our-games">OUR GAMES</a>
+              </li>
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#what-we-do">What We Do</a>
+              </li>
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#our-team">Our Team</a>
+              </li>
+              <li class="nav-item my-nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <div class="navbar-nav ms-auto">
+              <ul class="navbar-nav mb-2 mb-lg-0 fw-medium">
+                <li class="nav-item my-nav-item me-2">
+                  <a id="notification" class="nav-link" href=""
+                    ><i class="fa-regular fa-bell"></i
+                  ></a>
+                </li>
+                <li class="nav-item my-nav-item me-2">
+                  <a id="message" class="nav-link" href=""
+                    ><i class="fa-regular fa-message"></i
+                  ></a>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="border-0 px-4 btn btn-primary my-button text-font-chakra fw-bold"
+              >
+                Sign In
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-    <header id="home"></header>
+      </nav>
+    </header>
     <main>
+      <section
+        id="header"
+        class="d-flex justify-content-center align-items-center vh-100"
+      >
+        <div class="container">
+          <div
+            class="row justify-content-sm-center align-items-sm-center align-items-lg-stretch justify-content-lg-start"
+          >
+            <div class="col-lg-6 g-5">
+              <h1 class="hero-title text-light text-font-days fw-bold">
+                THE ULTIMATE <span class="text-lemon">GAMING</span> EXPERIENCE
+              </h1>
+              <p class="text-font-chakra fw-medium lead hero-desc">
+                Join millions of gamers worldwide in the most competitive
+                eSports tournaments. Experience next-level gaming with
+                cutting-edge technology and endless possibilities.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <button
+                    type="button"
+                    class="btn btn-primary my-button text-font-chakra fw-bold text-black border-0 p-2 w-100 mb-3"
+                  >
+                    Start Gaming Now
+                  </button>
+                </div>
+                <div class="col-lg-6">
+                  <button
+                    type="button"
+                    class="btn btn-primary my-button bg-transparent text-font-chakra fw-bold text-lemon border-0 trans-button p-2 w-100"
+                  >
+                    Watch Tournaments
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 g-5">
+              <div class="content position-relative">
+                <div
+                  class="image d-flex align-items-center overflow-hidden position-relative rounded-4"
+                >
+                  <img
+                    src="images/hero-img.png"
+                    alt="Gaming Setup Image"
+                    class="w-100 rounded-4 object-fit-cover"
+                  />
+                </div>
+                <div
+                  class="activeplayers p-sm-3 p-md-4 d-flex align-items-center justify-content-center dark-bg border-1 position-absolute"
+                >
+                  <span class="text-lemon me-2"
+                    ><i class="fa-solid fa-trophy"></i
+                  ></span>
+                  <div
+                    class="d-flex flex-column align-items-start justify-content-center"
+                  >
+                    <span class="text-font-chakra fw-medium top-txt"
+                      >Active Players</span
+                    >
+                    <span class="text-light fw-bold bot-txt">2.5M+</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="our-games"></section>
       <section id="what-we-do"></section>
       <section id="our-team"></section>
@@ -65,5 +158,6 @@
     <footer></footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
