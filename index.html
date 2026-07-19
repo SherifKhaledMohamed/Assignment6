@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="dark-bg text-light text-font-chakra">
+  <body class="dark-bg text-light text-font-chakra" data-bs-spy="scroll" data-bs-target="#mynav">
     <header
       class="border-bottom border-gray w-100 position-fixed top-0 start-0 dark-bg"
     >
-      <nav class="navbar navbar-expand-lg my-navbar w-100 py-4">
+      <nav id="mynav" class="navbar navbar-expand-lg my-navbar w-100 py-4">
         <div class="container">
           <a class="navbar-brand fw-bold text-lemon" href=""
             ><span class="logo"><i class="fa-solid fa-gamepad me-2"></i></span>
@@ -43,7 +43,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-2 mb-2 mb-lg-0 fw-medium">
               <li class="nav-item my-nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#header">Home</a>
               </li>
               <li class="nav-item my-nav-item">
                 <a class="nav-link" href="#our-games">OUR GAMES</a>
@@ -1135,7 +1135,7 @@
                       updates</span
                     >
                   </div>
-                  <span
+                  <div
                     class="logos fs-5 d-flex gap-3 w-100 justify-content-start align-items-end text-start"
                   >
                     <a
@@ -1162,7 +1162,7 @@
                     >
                       <i class="fa-brands fa-youtube text-lemon"></i>
                     </a>
-                  </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1293,17 +1293,175 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-3 header">
-            <a class="company fw-bold text-lemon" href="">
-              <span class="logo">
-                <i class="fa-solid fa-gamepad me-2"></i>
-              </span>
-              GameArena
-            </a>
+            <div class="content">
+              <a class="company fw-bold text-lemon" href="">
+                <span class="logo">
+                  <i class="fa-solid fa-gamepad me-2"></i>
+                </span>
+                GameArena
+              </a>
+              <p class="lead text-gray mt-3">
+                The ultimate destination for competitive gaming, esports
+                tournaments, and gaming community.
+              </p>
+            </div>
+            <div class="logos mt-4">
+              <div
+                class="logos fs-5 d-flex gap-3 w-100 justify-content-start align-items-end text-start"
+              >
+                <a
+                  href=""
+                  class="logo me-3 d-flex align-items-center justify-content-center bg-transparent text-decoration-none"
+                >
+                  <i class="fa-brands fa-x-twitter text-gray"></i>
+                </a>
 
-            <p class="lead text-gray">
-              The ultimate destination for competitive gaming, esports
-              tournaments, and gaming community.
+                <a
+                  href=""
+                  class="logo me-3 d-flex align-items-center justify-content-center bg-transparent text-decoration-none"
+                >
+                  <i class="fa-brands fa-facebook text-gray"></i>
+                </a>
+
+                <a
+                  href=""
+                  class="logo me-3 d-flex align-items-center justify-content-center bg-transparent text-decoration-none"
+                >
+                  <i class="fa-brands fa-instagram text-gray"></i>
+                </a>
+                <a
+                  href=""
+                  class="logo me-3 d-flex align-items-center justify-content-center bg-transparent text-decoration-none"
+                >
+                  <i class="fa-brands fa-youtube text-gray"></i>
+                </a>
+                <a
+                  href=""
+                  class="logo me-3 d-flex align-items-center justify-content-center bg-transparent text-decoration-none"
+                >
+                  <i class="fa-brands fa-twitch text-gray"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 links">
+            <h4 class="text-light text-font-days fw-bold mt-5 mt-md-0">
+              Games
+            </h4>
+            <ul class="ps-0">
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Valorant</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >League of Legends</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >CS:GO</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >DOTA 2</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Apex Legends</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 links">
+            <h4 class="text-light text-font-days fw-bold mt-4 mt-md-0">
+              Tournaments
+            </h4>
+            <ul class="ps-0">
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Upcoming Events</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Live Matches</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Results</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Rankings</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Schedule</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 links">
+            <h4 class="text-light text-font-days fw-bold mt-4 mt-md-0">
+              Support
+            </h4>
+            <ul class="ps-0">
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Help Center</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Bug Reports</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Feature Requests</a
+                >
+              </li>
+              <li class="mt-3 list-unstyled">
+                <a href="" class="text-decoration-none text-gray fw-medium"
+                  >Community Guidelines</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="opacity-25" />
+        <div class="row copyrights">
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-center justify-content-lg-start"
+          >
+            <p class="text-gray fw-medium text-font-chakra lead">
+              © 2025 GameArena. All rights reserved.
             </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-around align-content-center">
+              <a href="" class="text-font-chakra text-gray text-decoration-none"
+                >Privacy Policy</a
+              >
+              <a href="" class="text-font-chakra text-gray text-decoration-none"
+                >Terms of Service</a
+              >
+              <a href="" class="text-font-chakra text-gray text-decoration-none"
+                >Cookie Policy</a
+              >
+            </div>
           </div>
         </div>
       </div>

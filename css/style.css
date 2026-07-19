@@ -127,6 +127,10 @@ nav.my-navbar button.navbar-toggler:hover i {
   color: var(--color-lemon);
 }
 
+.nav-link.active {
+  color: var(--color-lemon) !important;
+}
+
 #header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
@@ -639,7 +643,7 @@ nav.my-navbar button.navbar-toggler:hover i {
 }
 
 #contact {
-  background: linear-gradient(to right,#0e131f,#0b0f14);
+  background: linear-gradient(to right, #0e131f, #0b0f14);
 }
 
 #contact .container .content .card {
@@ -755,7 +759,6 @@ nav.my-navbar button.navbar-toggler:hover i {
   }
 }
 
-
 #contact .container .footer {
   span.info-t {
     font-size: 21px;
@@ -768,6 +771,46 @@ nav.my-navbar button.navbar-toggler:hover i {
 .company {
   font-size: 18px !important;
   text-decoration: none;
+}
+
+footer .container {
+  .content {
+    .company {
+      font-size: 18px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .logos .logo i {
+    font-size: 16px;
+  }
+}
+
+footer .container .row .links {
+  h4 {
+    font-size: 18px;
+  }
+  a {
+    font-size: 14px;
+    transition: all 0.4s;
+  }
+  a:hover {
+    color: var(--color-lemon);
+  }
+}
+
+footer .row.copyrights {
+  p {
+    font-size: 14px;
+  }
+  a {
+    font-size: 14px;
+    transition: all 0.4s;
+  }
+  a:hover {
+    color: var(--color-lemon);
+  }
 }
 
 /*sm*/
@@ -888,42 +931,70 @@ nav.my-navbar button.navbar-toggler:hover i {
     font-size: 19px;
   }
 
-
   #contact .container .content .card .info h3 {
-  font-size: 20px;
-}
-#contact .container .content .card .info span {
-  font-size: 16px;
-}
-#contact .container .content .card .info.join h3 {
-  font-size: 24px;
-}
-#contact .container .content .card .info.join span {
-  font-size: 16px;
-}
-
-#contact .container h3.messageheader {
-  font-size: 24px;
-}
-
-#contact .container .form {
-
-  label {
-    font-size: 14px;
+    font-size: 20px;
   }
-  input::placeholder,
-  textarea::placeholder {
+  #contact .container .content .card .info span {
     font-size: 16px;
   }
-}
-#contact .container .footer {
-  span.info-t {
+  #contact .container .content .card .info.join h3 {
     font-size: 24px;
   }
-  span.info-b {
-    font-size: 14px;
+  #contact .container .content .card .info.join span {
+    font-size: 16px;
   }
-}
+
+  #contact .container h3.messageheader {
+    font-size: 24px;
+  }
+
+  #contact .container .form {
+    label {
+      font-size: 14px;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 16px;
+    }
+  }
+  #contact .container .footer {
+    span.info-t {
+      font-size: 24px;
+    }
+    span.info-b {
+      font-size: 14px;
+    }
+  }
+  .company {
+    font-size: 20px !important;
+  }
+
+  footer .container {
+    p {
+      font-size: 16px;
+    }
+    .logos .logo i {
+      font-size: 18px;
+    }
+  }
+
+  footer .container .row .links {
+    h4 {
+      font-size: 20px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
+
+  footer .row.copyrights {
+    p {
+      font-size: 16px;
+    }
+    a {
+      font-size: 16px;
+    }
+  }
 }
 /*lg*/
 @media screen and (min-width: 992px) {
